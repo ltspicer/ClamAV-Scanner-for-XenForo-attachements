@@ -1,6 +1,6 @@
 # LTspicer ClamAV Scanner add-on for XenForo
 
-LTspicer ClamAV Scanner add-on holds new attachments until a local ClamAV daemon has scanned them. It supports XenForo 2.2 and 2.3 and was developed against XenForo 2.2.19 and 2.3.6.
+The LTspicer ClamAV Scanner add-on holds new attachments until a local ClamAV daemon has scanned them. It supports XenForo 2.2 and 2.3 and was developed against XenForo 2.2.19 and 2.3.6.
 
 ## Features
 
@@ -36,14 +36,27 @@ sudo systemctl enable --now clamav-daemon
 sudo systemctl status clamav-freshclam clamav-daemon
 ```
 
-If the daemon does not start, check its log and configuration. Debian and Ubuntu commonly use `/etc/clamav/clamd.conf`; package defaults can vary. Check the configured local socket and scan size limit:
+If the daemon does not start, check its log and configuration. Debian and Ubuntu commonly use `/etc/clamav/clamd.conf`, though package defaults can vary.
 
-```sh
-sudo grep -E '^(LocalSocket|LocalSocketMode|StreamMaxLength)' /etc/clamav/clamd.conf
-ls -l /run/clamav
+For a XenForo upload limit of 350 MB, use settings like these. Edit existing active directives, or add a directive if it is absent; avoid leaving multiple active definitions of the same setting:
+
+```conf
+MaxFileSize 360M
+StreamMaxLength 360M
+MaxScanSize 1G
+AlertExceedsMax yes
 ```
 
-The add-on's default socket value is `unix:///run/clamav/clamd.ctl`. Set the ACP option to the exact `LocalSocket` path shown by your daemon configuration. A Unix socket is recommended for a local daemon. Make sure the PHP worker user can access the socket; use a suitable group or socket permissions rather than exposing the socket to every local user. Set `StreamMaxLength` high enough for your largest XenForo attachment.
+`MaxFileSize` and `StreamMaxLength` are set slightly above the upload cap. `MaxScanSize` limits the total amount of data ClamAV scans inside archives and other containers; 1G is an example cap, not a universal value. Higher limits can use more server resources. `AlertExceedsMax yes` makes ClamAV report files that exceed scanning limits as detections instead of silently skipping them.
+
+Restart clamd after changing its configuration:
+
+```sh
+sudo systemctl restart clamav-daemon
+sudo systemctl status clamav-daemon
+```
+
+The add-on's default socket value is `unix:///run/clamav/clamd.ctl`. Set the ACP option to the exact `LocalSocket` path shown by your daemon configuration. A Unix socket is recommended for a local daemon. Make sure the PHP worker user can access the socket; use a suitable group or socket permissions rather than exposing the socket to every local user.
 
 ClamAV must have current signature databases before scanning. The `clamav-freshclam` service maintains them. The official ClamAV documentation covers [distribution packages](https://docs.clamav.net/manual/Installing/Packages.html), [signature updates](https://docs.clamav.net/manual/Usage/SignatureManagement.html), and [daemon configuration](https://docs.clamav.net/manual/Usage/Configuration.html).
 
@@ -73,11 +86,11 @@ Configure and start ClamAV, verify socket access, and make sure XenForo's backgr
 
 - The global report is in the ACP under **Content → LTspicer ClamAV report**.
 - **Retry scan** queues another background scan, including for attachments already marked clean.
-- **Block attachment** manually blocks a clean attachment; **Release attachment** makes an infected or manually blocked attachment available again.
-- **Release attachment** makes an infected attachment available despite the detection. Use it only after reviewing the file.
+- **Block attachment** manually blocks a clean attachment.
+- **Release attachment** makes an infected or manually blocked attachment available again. Use it only after reviewing the file.
 - **Re-block attachment** blocks a manually released attachment again.
 - **Delete attachment** opens XenForo's confirmation page and permanently deletes the selected attachment.
-- To show a member's own report in the account menu, grant **View my ClamAV scan report** in **Groups & permissions → User group permissions → General permissions**.
+- To show a member's own report in the account menu, grant **Can view their own ClamAV scan report** in **Groups & permissions → User group permissions → General permissions**.
 
 ## German phrases
 
