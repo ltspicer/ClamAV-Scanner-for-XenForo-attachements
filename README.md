@@ -1,6 +1,6 @@
-# LTspicer ClamAV Scanner for XenForo
+# LTspicer ClamAV Scanner add-on for XenForo
 
-LTspicer ClamAV Scanner holds new attachments until a local ClamAV daemon has scanned them. It supports XenForo 2.2 and 2.3 and was developed against XenForo 2.2.19 and 2.3.6.
+LTspicer ClamAV Scanner add-on holds new attachments until a local ClamAV daemon has scanned them. It supports XenForo 2.2 and 2.3 and was developed against XenForo 2.2.19 and 2.3.6.
 
 ## Features
 
