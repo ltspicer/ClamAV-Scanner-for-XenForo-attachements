@@ -6,7 +6,7 @@ LTspicer ClamAV Scanner add-on holds new attachments until a local ClamAV daemon
 
 - Scans attachments in a XenForo background job using ClamAV's `INSTREAM` protocol.
 - Keeps attachments pending or blocked if scanning fails or ClamAV reports an infection.
-- Provides an ACP scan report with filters, retry, manual release, re-block and attachment deletion.
+- Provides an ACP scan report with filters, retry, manual block and release, re-block and attachment deletion.
 - Lets administrators exclude file extensions, user groups, forums and choose whether to scan private conversation attachments.
 - Emails selected members when ClamAV detects an infected upload.
 - Offers a permission-controlled account report showing each member only their own attachments.
@@ -63,7 +63,7 @@ Open **Setup → Options → LTspicer ClamAV scanning**:
 
 - **clamd socket address:** use the daemon's `LocalSocket` path. The prefilled path is a common Debian/Ubuntu default; verify it on your server. TCP is also supported with a value such as `tcp://127.0.0.1:3310`.
 - **Timeout:** maximum connection and response time.
-- **Excluded extensions, user groups, and forums:** choose what should skip scanning. Image files are scanned by default; excluding image extensions reduces coverage.
+- **Excluded extensions, user groups, and forums:** select what should skip scanning. Image files are scanned by default; excluding image extensions reduces coverage.
 - **Scan private conversation attachments:** turn this off if private message attachments should not be scanned.
 - **Alert recipients:** search for and select the members who should receive infection emails.
 
@@ -72,7 +72,8 @@ Configure and start ClamAV, verify socket access, and make sure XenForo's backgr
 ## Reports and permissions
 
 - The global report is in the ACP under **Content → LTspicer ClamAV report**.
-- The **Retry scan** button queues another background scan and shows a confirmation message.
+- **Retry scan** queues another background scan, including for attachments already marked clean.
+- **Block attachment** manually blocks a clean attachment; **Release attachment** makes an infected or manually blocked attachment available again.
 - **Release attachment** makes an infected attachment available despite the detection. Use it only after reviewing the file.
 - **Re-block attachment** blocks a manually released attachment again.
 - **Delete attachment** opens XenForo's confirmation page and permanently deletes the selected attachment.
