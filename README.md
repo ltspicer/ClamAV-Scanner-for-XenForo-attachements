@@ -9,6 +9,7 @@ The LTspicer ClamAV Scanner add-on holds new attachments until a local ClamAV da
 - Provides an ACP scan report with filters, retry, manual block and release, re-block and attachment deletion.
 - Lets administrators exclude file extensions, user groups, forums and choose whether to scan private conversation attachments.
 - Emails selected members when ClamAV detects an infected upload.
+- Adds a direct link to the related public forum post or thread in infection emails and the ACP report; private conversation attachments are not linked.
 - Offers a permission-controlled account report showing each member only their own attachments.
 - Shows a status marker on pending, infected, scan-error and manually blocked attachments.
 
@@ -68,7 +69,7 @@ Run a harmless local scan using the same `INSTREAM` transport as the add-on:
 clamdscan --stream /etc/hosts
 ```
 
-Then, in a test forum, upload the standard harmless EICAR test file and confirm that the ACP report shows it as infected and that XenForo blocks it. Remove the test attachment after verifying the workflow.
+Then, in a test forum, upload the standard harmless EICAR test file as a `.txt` attachment (make sure `.txt` is allowed in XenForo). Do not rename it to `.jpg` or `.png`: XenForo validates image content before the add-on or ClamAV scan runs. Confirm that the ACP report shows the file as infected and that XenForo blocks it. Remove the test attachment after verifying the workflow.
 
 ## Configure the XenForo add-on
 
@@ -91,6 +92,7 @@ Configure and start ClamAV, verify socket access, and make sure XenForo's backgr
 - **Re-block attachment** blocks a manually released attachment again.
 - **Delete attachment** opens XenForo's confirmation page and permanently deletes the selected attachment.
 - **Remove from report** removes a clean scan result without deleting the XenForo attachment. The attachment no longer has a scan report entry.
+- Members with the report permission can also remove their own clean entries from their account report; the attachments remain available.
 - **Remove all clean entries** opens a confirmation page before removing every clean scan report entry. The attachments themselves are kept.
 - To show a member's own report in the account menu, grant **Can view their own ClamAV scan report** in **Groups & permissions → User group permissions → General permissions**.
 
