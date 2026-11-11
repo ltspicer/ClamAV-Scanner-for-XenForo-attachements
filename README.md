@@ -75,7 +75,7 @@ Then, in a test forum, upload the standard harmless EICAR test file and confirm 
 Open **Setup → Options → LTspicer ClamAV scanning**:
 
 - **clamd socket address:** use the daemon's `LocalSocket` path. The prefilled path is a common Debian/Ubuntu default; verify it on your server. TCP is also supported with a value such as `tcp://127.0.0.1:3310`.
-- **Timeout:** maximum connection and response time.
+- **Timeout:** maximum connection and response time. The default is 30 seconds; raise it if large files or archives regularly exceed that time on your server.
 - **Excluded extensions, user groups, and forums:** select what should skip scanning. Image files are scanned by default; excluding image extensions reduces coverage.
 - **Scan private conversation attachments:** turn this off if private message attachments should not be scanned.
 - **Alert recipients:** search for and select the members who should receive infection emails.
