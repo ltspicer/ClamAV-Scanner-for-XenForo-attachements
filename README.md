@@ -85,11 +85,13 @@ Configure and start ClamAV, verify socket access, and make sure XenForo's backgr
 ## Reports and permissions
 
 - The global report is in the ACP under **Content → LTspicer ClamAV report**.
-- **Retry scan** queues another background scan, including for attachments already marked clean.
+- **Retry scan** queues another scan. Members can retry their own attachments in the error state from their account report; administrators can queue all scan errors in bulk from the ACP.
 - **Block attachment** manually blocks a clean attachment.
 - **Release attachment** makes an infected or manually blocked attachment available again. Use it only after reviewing the file.
 - **Re-block attachment** blocks a manually released attachment again.
 - **Delete attachment** opens XenForo's confirmation page and permanently deletes the selected attachment.
+- **Remove from report** removes a clean scan result without deleting the XenForo attachment. The attachment no longer has a scan report entry.
+- **Remove all clean entries** opens a confirmation page before removing every clean scan report entry. The attachments themselves are kept.
 - To show a member's own report in the account menu, grant **Can view their own ClamAV scan report** in **Groups & permissions → User group permissions → General permissions**.
 
 ## German phrases
