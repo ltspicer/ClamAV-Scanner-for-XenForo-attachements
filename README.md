@@ -8,6 +8,7 @@ The LTspicer ClamAV Scanner add-on holds new attachments until a local ClamAV da
 - Keeps attachments pending or blocked if scanning fails or ClamAV reports an infection.
 - Provides an ACP scan report with filters, retry, manual block and release, re-block and attachment deletion.
 - Shows clamd reachability, loaded signature database version and age in the ACP report, with a configurable stale warning threshold (48 hours by default).
+- Displays the supplied ClamAV logo as the add-on icon in the XenForo ACP.
 - Lets administrators exclude file extensions, user groups, forums and choose whether to scan private conversation attachments.
 - Emails selected members when ClamAV detects an infected upload.
 - Adds a direct link to the related public forum post or thread in infection emails and the ACP report; private conversation attachments are not linked.
@@ -86,7 +87,7 @@ Configure and start ClamAV, verify socket access, and make sure XenForo's backgr
 
 ## Reports and permissions
 
-- The global report is in the ACP under **Content → LTspicer ClamAV report**.
+- The global report is in the ACP under **Content → ClamAV report**.
 - **Retry scan** queues another scan. Members can retry their own attachments in the error state from their account report; administrators can queue all scan errors in bulk from the ACP.
 - **Block attachment** manually blocks a clean attachment.
 - **Release attachment** makes an infected or manually blocked attachment available again. Use it only after reviewing the file.
