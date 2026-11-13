@@ -1,66 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<language title="Deutsch" date_format="j F Y" time_format="H:i" currency_format="{symbol}{value}" week_start="0" decimal_point="," thousands_separator="." label_separator=":" comma_separator=", " ellipsis="…" parenthesis_open="(" parenthesis_close=")" language_code="de-DE" text_direction="LTR" user_selectable="1" addon_id="LTspicer/ClamAVScanner" base_version_id="1090000" export_version="2">
-  <phrase title="admin_navigation.ClamAV_report" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[LTspicer ClamAV-Bericht]]></phrase>
-  <phrase title="ltspicer_clamav_account_report" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Mein Anhang-Scanbericht]]></phrase>
-  <phrase title="ltspicer_clamav_account_report_empty" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Es gibt keine Scanergebnisse zu deinen Anhängen.]]></phrase>
-  <phrase title="ltspicer_clamav_all_clean_removed" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Alle sauberen Scanberichteinträge wurden entfernt. Die Anhänge selbst wurden nicht gelöscht.]]></phrase>
-  <phrase title="ltspicer_clamav_attachment_unavailable" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Dieser Anhang wird gerade geprüft oder wurde vom Virenscanner gesperrt.]]></phrase>
-  <phrase title="ltspicer_clamav_block" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Anhang sperren]]></phrase>
-  <phrase title="ltspicer_clamav_blocked" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Der Anhang wurde gesperrt.]]></phrase>
-  <phrase title="ltspicer_clamav_clean" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Sauber]]></phrase>
-  <phrase title="ltspicer_clamav_database_status_current" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[ClamAV ist erreichbar. Die Signaturdatenbank {databaseVersion} wurde am {date} erstellt (vor {age} Stunden); sie liegt innerhalb der Warnschwelle von {threshold} Stunden. Engine: {engineVersion}.]]></phrase>
-  <phrase title="ltspicer_clamav_database_status_error" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Warnung: Der Status der ClamAV-Datenbank konnte nicht gelesen werden: {error}]]></phrase>
-  <phrase title="ltspicer_clamav_database_status_stale" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Warnung: Die Signaturdatenbank {databaseVersion} wurde am {date} erstellt (vor {age} Stunden) und ist damit älter als die Warnschwelle von {threshold} Stunden. Prüfe, ob freshclam die Datenbank aktualisiert und clamd sie geladen hat. Engine: {engineVersion}.]]></phrase>
-  <phrase title="ltspicer_clamav_delete" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Anhang löschen]]></phrase>
-  <phrase title="ltspicer_clamav_detection" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Erkennung]]></phrase>
-  <phrase title="ltspicer_clamav_error" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Scanfehler]]></phrase>
-  <phrase title="ltspicer_clamav_error_details" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Fehlerdetails]]></phrase>
-  <phrase title="ltspicer_clamav_excluded" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Aufgrund der Konfiguration ausgeschlossen]]></phrase>
-  <phrase title="ltspicer_clamav_forget" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Aus Bericht entfernen]]></phrase>
-  <phrase title="ltspicer_clamav_forget_all" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Alle sauberen Einträge entfernen]]></phrase>
-  <phrase title="ltspicer_clamav_forget_all_confirm" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Bist du sicher, dass du alle {count} sauberen Scanberichteinträge entfernen möchtest? Die Anhänge selbst werden nicht gelöscht.]]></phrase>
-  <phrase title="ltspicer_clamav_infected" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Infiziert]]></phrase>
-  <phrase title="ltspicer_clamav_infection_body" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[ClamAV hat eine Bedrohung in einem Forenanhang erkannt.
+<language title="Deutsch" date_format="j F Y" time_format="H:i" currency_format="{symbol}{value}" week_start="0" decimal_point="," thousands_separator="." label_separator=":" comma_separator=", " ellipsis="…" parenthesis_open="(" parenthesis_close=")" language_code="de-DE" text_direction="LTR" user_selectable="1" addon_id="LTspicer/ClamAVScanner" base_version_id="1090300" export_version="2">
+  <phrase title="admin_navigation.ClamAV_report" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[LTspicer ClamAV-Bericht]]></phrase>
+  <phrase title="ltspicer_clamav_account_report" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Mein Anhang-Scanbericht]]></phrase>
+  <phrase title="ltspicer_clamav_account_report_empty" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Es gibt keine Scanergebnisse zu deinen Anhängen.]]></phrase>
+  <phrase title="ltspicer_clamav_all_clean_removed" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Alle sauberen Scanberichteinträge wurden entfernt. Die Anhänge selbst wurden nicht gelöscht.]]></phrase>
+  <phrase title="ltspicer_clamav_attachment_unavailable" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Dieser Anhang wird gerade geprüft oder wurde vom Virenscanner gesperrt.]]></phrase>
+  <phrase title="ltspicer_clamav_block" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Anhang sperren]]></phrase>
+  <phrase title="ltspicer_clamav_blocked" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Der Anhang wurde gesperrt.]]></phrase>
+  <phrase title="ltspicer_clamav_clean" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Sauber]]></phrase>
+  <phrase title="ltspicer_clamav_database_status_current" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[ClamAV ist erreichbar. Die Signaturdatenbank {databaseVersion} wurde am {date} erstellt (vor {age} Stunden); sie liegt innerhalb der Warnschwelle von {threshold} Stunden. Engine: {engineVersion}.]]></phrase>
+  <phrase title="ltspicer_clamav_database_status_error" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Warnung: Der Status der ClamAV-Datenbank konnte nicht gelesen werden: {error}]]></phrase>
+  <phrase title="ltspicer_clamav_database_status_stale" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Warnung: Die Signaturdatenbank {databaseVersion} wurde am {date} erstellt (vor {age} Stunden) und ist damit älter als die Warnschwelle von {threshold} Stunden. Prüfe, ob freshclam die Datenbank aktualisiert und clamd sie geladen hat. Engine: {engineVersion}.]]></phrase>
+  <phrase title="ltspicer_clamav_delete" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Anhang löschen]]></phrase>
+  <phrase title="ltspicer_clamav_detection" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Erkennung]]></phrase>
+  <phrase title="ltspicer_clamav_error" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Scanfehler]]></phrase>
+  <phrase title="ltspicer_clamav_error_details" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Fehlerdetails]]></phrase>
+  <phrase title="ltspicer_clamav_excluded" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Aufgrund der Konfiguration ausgeschlossen]]></phrase>
+  <phrase title="ltspicer_clamav_forget" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Aus Bericht entfernen]]></phrase>
+  <phrase title="ltspicer_clamav_forget_all" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Alle sauberen Einträge entfernen]]></phrase>
+  <phrase title="ltspicer_clamav_forget_all_confirm" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Bist du sicher, dass du alle {count} sauberen Scanberichteinträge entfernen möchtest? Die Anhänge selbst werden nicht gelöscht.]]></phrase>
+  <phrase title="ltspicer_clamav_infected" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Infiziert]]></phrase>
+  <phrase title="ltspicer_clamav_infection_body" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[ClamAV hat eine Bedrohung in einem Forenanhang erkannt.
 
 Anhang-ID: {attachment_id}
 Dateiname: {filename}
 Erkennung: {detection}
 
 Weitere Informationen findest du im XenForo-ACP unter Inhalt > LTspicer ClamAV report.]]></phrase>
-  <phrase title="ltspicer_clamav_infection_subject" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[ClamAV hat einen infizierten Anhang erkannt]]></phrase>
-  <phrase title="ltspicer_clamav_pending" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Ausstehend]]></phrase>
-  <phrase title="ltspicer_clamav_reblock" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Anhang erneut sperren]]></phrase>
-  <phrase title="ltspicer_clamav_reblocked" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Der Anhang wurde erneut gesperrt.]]></phrase>
-  <phrase title="ltspicer_clamav_reblocked_status" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Manuell gesperrt]]></phrase>
-  <phrase title="ltspicer_clamav_release" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Anhang freigeben]]></phrase>
-  <phrase title="ltspicer_clamav_released" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Der Anhang wurde freigegeben und ist jetzt für Benutzer verfügbar.]]></phrase>
-  <phrase title="ltspicer_clamav_released_status" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Manuell freigegeben]]></phrase>
-  <phrase title="ltspicer_clamav_report_entry_removed" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Der Scanberichteintrag wurde entfernt. Der Anhang selbst wurde nicht gelöscht.]]></phrase>
-  <phrase title="ltspicer_clamav_report_limit" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Es werden die letzten 200 Anhänge angezeigt.]]></phrase>
-  <phrase title="ltspicer_clamav_retry" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Scan erneut starten]]></phrase>
-  <phrase title="ltspicer_clamav_retry_all" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Alle Scanfehler erneut versuchen]]></phrase>
-  <phrase title="ltspicer_clamav_retry_all_confirm" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Bist du sicher, dass du Scans für alle {count} Anhänge mit Scanfehlern einreihen möchtest? Die Anhänge bleiben gesperrt, bis ihre Scans abgeschlossen sind.]]></phrase>
-  <phrase title="ltspicer_clamav_retry_all_queued" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Scans für {count} Anhänge wurden eingereiht. Der Status wird nach Ausführung der Hintergrundjobs aktualisiert.]]></phrase>
-  <phrase title="ltspicer_clamav_retry_queued" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Der Scan wurde eingereiht. Der Status wird aktualisiert, sobald der Hintergrundjob ausgeführt wurde.]]></phrase>
-  <phrase title="ltspicer_clamav_scan_report" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[ClamAV-Scanbericht]]></phrase>
-  <phrase title="ltspicer_clamav_view_content" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Forenbeitrag oder Thema ansehen]]></phrase>
-  <phrase title="option.ltspicerClamAvAlertUserIds" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Empfänger der Alarmmeldung]]></phrase>
-  <phrase title="option.ltspicerClamAvDatabaseWarningHours" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Warnen, wenn die ClamAV-Datenbank älter ist als (Stunden)]]></phrase>
-  <phrase title="option.ltspicerClamAvExcludedExtensions" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Ausgeschlossene Dateiendungen]]></phrase>
-  <phrase title="option.ltspicerClamAvExcludedForums" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Foren von der Prüfung ausschließen]]></phrase>
-  <phrase title="option.ltspicerClamAvExcludedUserGroups" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Ausgeschlossene Benutzergruppen]]></phrase>
-  <phrase title="option.ltspicerClamAvScanPrivateConversations" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Anhänge in privaten Unterhaltungen prüfen]]></phrase>
-  <phrase title="option.ltspicerClamAvSocket" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[clamd-Socket-Adresse]]></phrase>
-  <phrase title="option.ltspicerClamAvTimeout" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Verbindungs- und Lese-Timeout (Sekunden)]]></phrase>
-  <phrase title="option_explain.ltspicerClamAvAlertUserIds" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Wähle Mitglieder aus, die bei einem infizierten Upload eine E-Mail erhalten sollen.]]></phrase>
-  <phrase title="option_explain.ltspicerClamAvDatabaseWarningHours" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Der ACP-Scanbericht warnt, wenn die von clamd geladene Signaturdatenbank älter ist als dieser Wert. Der Standardwert beträgt 48 Stunden.]]></phrase>
-  <phrase title="option_explain.ltspicerClamAvExcludedExtensions" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Eine Dateiendung pro Zeile oder mehrere, durch Kommas getrennt. Diese Dateien werden nicht geprüft.]]></phrase>
-  <phrase title="option_explain.ltspicerClamAvExcludedForums" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Wähle Foren aus, deren Anhänge nicht geprüft werden. Die Ausnahme greift, sobald der Anhang einem Beitrag in diesem Forum zugeordnet wurde.]]></phrase>
-  <phrase title="option_explain.ltspicerClamAvExcludedUserGroups" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Wähle Benutzergruppen aus, deren Anhänge nicht geprüft werden.]]></phrase>
-  <phrase title="option_explain.ltspicerClamAvScanPrivateConversations" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Wenn aktiviert, werden auch Anhänge in privaten Unterhaltungen geprüft. Deaktiviere diese Option, um sie vom ClamAV-Scan auszunehmen.]]></phrase>
-  <phrase title="option_explain.ltspicerClamAvSocket" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Unix-Socket-Beispiel: unix:///run/clamav/clamd.ctl. TCP-Beispiel: tcp://127.0.0.1:3310. Passe den Pfad an deine Serverkonfiguration an.]]></phrase>
-  <phrase title="option_explain.ltspicerClamAvTimeout" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Maximale Wartezeit in Sekunden für die Verbindung zu clamd und dessen Scan-Antwort. Erhöhe den Wert bei grossen Anhängen oder langsamen Systemen.]]></phrase>
-  <phrase title="option_group.ltspicerClamAv" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[LTspicer ClamAV-Scan]]></phrase>
-  <phrase title="option_group_description.ltspicerClamAv" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Konfiguriere den lokalen ClamAV-Dienst, Scan-Ausnahmen und Infektionsmeldungen.]]></phrase>
-  <phrase title="permission.general_viewClamAvScanReport" addon_id="LTspicer/ClamAVScanner" version_id="1090000" version_string="1.9.0"><![CDATA[Kann eigenen ClamAV-Scanbericht sehen]]></phrase>
+  <phrase title="ltspicer_clamav_infection_subject" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[ClamAV hat einen infizierten Anhang erkannt]]></phrase>
+  <phrase title="ltspicer_clamav_pending" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Ausstehend]]></phrase>
+  <phrase title="ltspicer_clamav_reblock" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Anhang erneut sperren]]></phrase>
+  <phrase title="ltspicer_clamav_reblocked" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Der Anhang wurde erneut gesperrt.]]></phrase>
+  <phrase title="ltspicer_clamav_reblocked_status" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Manuell gesperrt]]></phrase>
+  <phrase title="ltspicer_clamav_release" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Anhang freigeben]]></phrase>
+  <phrase title="ltspicer_clamav_released" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Der Anhang wurde freigegeben und ist jetzt für Benutzer verfügbar.]]></phrase>
+  <phrase title="ltspicer_clamav_released_status" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Manuell freigegeben]]></phrase>
+  <phrase title="ltspicer_clamav_report_entry_removed" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Der Scanberichteintrag wurde entfernt. Der Anhang selbst wurde nicht gelöscht.]]></phrase>
+  <phrase title="ltspicer_clamav_report_limit" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Es werden die letzten 200 Anhänge angezeigt.]]></phrase>
+  <phrase title="ltspicer_clamav_retry" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Scan erneut starten]]></phrase>
+  <phrase title="ltspicer_clamav_retry_all" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Alle Scanfehler erneut versuchen]]></phrase>
+  <phrase title="ltspicer_clamav_retry_all_confirm" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Bist du sicher, dass du Scans für alle {count} Anhänge mit Scanfehlern einreihen möchtest? Die Anhänge bleiben gesperrt, bis ihre Scans abgeschlossen sind.]]></phrase>
+  <phrase title="ltspicer_clamav_retry_all_queued" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Scans für {count} Anhänge wurden eingereiht. Der Status wird nach Ausführung der Hintergrundjobs aktualisiert.]]></phrase>
+  <phrase title="ltspicer_clamav_retry_queued" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Der Scan wurde eingereiht. Der Status wird aktualisiert, sobald der Hintergrundjob ausgeführt wurde.]]></phrase>
+  <phrase title="ltspicer_clamav_scan_report" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[ClamAV-Scanbericht]]></phrase>
+  <phrase title="ltspicer_clamav_view_content" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Forenbeitrag oder Thema ansehen]]></phrase>
+  <phrase title="option.ltspicerClamAvAlertUserIds" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Empfänger der Alarmmeldung]]></phrase>
+  <phrase title="option.ltspicerClamAvDatabaseWarningHours" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Warnen, wenn die ClamAV-Datenbank älter ist als (Stunden)]]></phrase>
+  <phrase title="option.ltspicerClamAvExcludedExtensions" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Ausgeschlossene Dateiendungen]]></phrase>
+  <phrase title="option.ltspicerClamAvExcludedForums" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Foren von der Prüfung ausschließen]]></phrase>
+  <phrase title="option.ltspicerClamAvExcludedUserGroups" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Ausgeschlossene Benutzergruppen]]></phrase>
+  <phrase title="option.ltspicerClamAvScanPrivateConversations" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Anhänge in privaten Unterhaltungen prüfen]]></phrase>
+  <phrase title="option.ltspicerClamAvSocket" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[clamd-Socket-Adresse]]></phrase>
+  <phrase title="option.ltspicerClamAvTimeout" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Verbindungs- und Lese-Timeout (Sekunden)]]></phrase>
+  <phrase title="option_explain.ltspicerClamAvAlertUserIds" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Wähle Mitglieder aus, die bei einem infizierten Upload eine E-Mail erhalten sollen.]]></phrase>
+  <phrase title="option_explain.ltspicerClamAvDatabaseWarningHours" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Der ACP-Scanbericht warnt, wenn die von clamd geladene Signaturdatenbank älter ist als dieser Wert. Der Standardwert beträgt 48 Stunden.]]></phrase>
+  <phrase title="option_explain.ltspicerClamAvExcludedExtensions" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Eine Dateiendung pro Zeile oder mehrere, durch Kommas getrennt. Diese Dateien werden nicht geprüft.]]></phrase>
+  <phrase title="option_explain.ltspicerClamAvExcludedForums" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Wähle Foren aus, deren Anhänge nicht geprüft werden. Die Ausnahme greift, sobald der Anhang einem Beitrag in diesem Forum zugeordnet wurde.]]></phrase>
+  <phrase title="option_explain.ltspicerClamAvExcludedUserGroups" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Wähle Benutzergruppen aus, deren Anhänge nicht geprüft werden.]]></phrase>
+  <phrase title="option_explain.ltspicerClamAvScanPrivateConversations" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Wenn aktiviert, werden auch Anhänge in privaten Unterhaltungen geprüft. Deaktiviere diese Option, um sie vom ClamAV-Scan auszunehmen.]]></phrase>
+  <phrase title="option_explain.ltspicerClamAvSocket" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Unix-Socket-Beispiel: unix:///run/clamav/clamd.ctl. TCP-Beispiel: tcp://127.0.0.1:3310. Passe den Pfad an deine Serverkonfiguration an.]]></phrase>
+  <phrase title="option_explain.ltspicerClamAvTimeout" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Maximale Wartezeit in Sekunden für die Verbindung zu clamd und dessen Scan-Antwort. Erhöhe den Wert bei grossen Anhängen oder langsamen Systemen.]]></phrase>
+  <phrase title="option_group.ltspicerClamAv" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[LTspicer ClamAV-Scan]]></phrase>
+  <phrase title="option_group_description.ltspicerClamAv" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Konfiguriere den lokalen ClamAV-Dienst, Scan-Ausnahmen und Infektionsmeldungen.]]></phrase>
+  <phrase title="permission.general_viewClamAvScanReport" addon_id="LTspicer/ClamAVScanner" version_id="1090300" version_string="1.9.3"><![CDATA[Kann eigenen ClamAV-Scanbericht sehen]]></phrase>
 </language>
