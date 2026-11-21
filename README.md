@@ -73,6 +73,8 @@ clamdscan --stream /etc/hosts
 
 Then, in a test forum, upload the standard harmless EICAR test file as a `.txt` attachment (make sure `.txt` is allowed in XenForo). Do not rename it to `.jpg` or `.png`: XenForo validates image content before the add-on or ClamAV scan runs. Confirm that the ACP report shows the file as infected and that XenForo blocks it. Remove the test attachment after verifying the workflow.
 
+.rar, .zip, .pdf etc is also ok.
+
 ## Configure the XenForo add-on
 
 Open **Setup → Options → LTspicer ClamAV scanning**:
